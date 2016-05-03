@@ -1,0 +1,161 @@
+#container-fluid{
+         align-content: center;
+     text-align: center;
+
+    
+    
+}
+
+#row-content {
+}
+
+h1 {
+    font-size:30pt;
+}
+h4 {
+    font-size:17pt;
+    color: GoldenRod;
+}
+h5 {
+    font-size:30pt;
+    text-align: center;
+    margin:20px;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    margin: 80px 10px 0px 100px;
+    padding: 10;
+    font-family:sans-serif; 
+    font-weight:bold; 
+    font-size:10pt;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+ 
+}
+
+/* Topmatter */
+
+#crystalspink img {
+    display: block;
+    height: 130px;  
+    width: 100px;
+    
+}
+#crystalsblue img {
+    display: block;
+    height: 130px;  
+    width: 100px;
+    }
+#crystalspurple img {
+    display: block;
+    height: 130px;  
+    width: 100px;
+    }
+#crystalsyellow img {
+    display: block;
+    height: 130px;  
+    width: 100px;
+    
+}
+
+
+
+button{
+    background:#f1f1f1;
+    height:auto;
+    text-align: center;
+}
+/* For the left 'Guess A Letter!' and 'Guessed Letter' boxes. */
+.col-sm-3 {
+     text-align:center;
+     float:left;
+ }
+
+.col-sm-9 {
+    font-family: 'Audiowide', cursive;
+     text-align:center;
+}
+
+.col-sm-9 {
+    font-family: 'Audiowide', cursive;
+     text-align:center;
+ }
+
+.col-sm-4 {
+    font-family: 'Audiowide', cursive;
+     text-align:center;
+     padding-top: 10px;
+
+}
+.well {
+    background-color: #483d8b;
+
+
+
+
+
+
+
+
+.container-title {
+    color:#6f5a2d;
+}
+.input-area {
+    width:75px;
+    height:31px;
+    margin:auto;
+    padding:3pt;
+    border: 1px #6f5a2d solid;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    background:#ebe2ce;
+}
+#letter-input {
+    border:1px #6f5a2d solid;
+    width:20pt;
+    font-size:14pt;
+    text-align:center;
+}
+.guessed-letter {
+    color:#792c15;
+}
+/* Word Box */
+.word-box {
+    width:250px;
+    margin:auto;
+    margin-top:25px;
+    text-align:center;
+}
+.word-display {
+    background:#ebe2ce;
+    border:1px #6f5a2d solid;
+    height:31px;
+    padding:3pt;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+}
+.shown-letter {
+    border-bottom: 3px #000 solid;
+    padding: 0 2px;
+    margin: 0 2px;
+    color:#1c2025;
+}
+/* Hangman Area */
+.hang-container {
+    margin-top:-10px;
+    margin-right: 90px; 
+    width:200px;
+    height:205px;
+    float:right;
+}
+.scaffolding-top {
+    width:108px;
+    height:5px;
+    background:#332915;
+}
