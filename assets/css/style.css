@@ -1,13 +1,13 @@
 #container-fluid{
          align-content: center;
      text-align: center;
+ }
 
-    
-    
-}
+     #timer {
+     margin: 0px 0px 0px 0px;
+     padding: 50px;
+}  
 
-#row-content {
-}
 
 h1 {
     font-size:60pt;
@@ -26,7 +26,7 @@ h5 {
 body {
     width: 100%;
     text-align: center;
-    margin: 80px 10px 0px 100px;
+    margin: 80px 10px 0px 120px;
     padding: 10;
     font-family:sans-serif; 
     font-weight:bold; 
@@ -35,8 +35,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
- 
-}
+ }
+#start {
+        
+ }  
+
+
 
 /* Topmatter */
 
@@ -71,6 +75,13 @@ button{
     text-align: center;
 }
 /* For the left 'Guess A Letter!' and 'Guessed Letter' boxes. */
+.col-sm-2 {
+     text-align:center;
+     float:center;
+     font-family: 'Righteous', cursive;    
+    margin-top: 0px;
+ }
+
 .col-sm-3 {
      text-align:center;
      float:center;
@@ -101,73 +112,7 @@ button{
     border-left-width: 0px;
     border-right-width:0px;
     border-color: Goldenrod;
-   color: #ff4500;
-    opacity: 0.6;
+    color: #ff4500;
+    opacity: 0.7;
 }
 
-
-
-
-
-
-
-
-
-.container-title {
-    color:#6f5a2d;
-}
-.input-area {
-    width:75px;
-    height:31px;
-    margin:auto;
-    padding:3pt;
-    border: 1px #6f5a2d solid;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
-    background:#ebe2ce;
-}
-#letter-input {
-    border:1px #6f5a2d solid;
-    width:20pt;
-    font-size:14pt;
-    text-align:center;
-}
-.guessed-letter {
-    color:#792c15;
-}
-/* Word Box */
-.word-box {
-    width:250px;
-    margin:auto;
-    margin-top:25px;
-    text-align:center;
-}
-.word-display {
-    background:#ebe2ce;
-    border:1px #6f5a2d solid;
-    height:31px;
-    padding:3pt;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
-}
-.shown-letter {
-    border-bottom: 3px #000 solid;
-    padding: 0 2px;
-    margin: 0 2px;
-    color:#1c2025;
-}
-/* Hangman Area */
-.hang-container {
-    margin-top:-10px;
-    margin-right: 90px; 
-    width:200px;
-    height:205px;
-    float:right;
-}
-.scaffolding-top {
-    width:108px;
-    height:5px;
-    background:#332915;
-}
