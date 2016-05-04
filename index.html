@@ -27,22 +27,20 @@
 
 <div class="container-fluid">
 
- 
-
     <div class="col-sm-9">
       <div class="new">
 
         <h1>Disco Trivia</h1><br>
-        <p> Beat the clock!</p>
+        <p> <h6>Beat the clock!</h6></p>
       </div>
       </div>
 
-        
-      
       <div class="row">
         <div class="col-sm-9">
           <div class="well">
+          <div id= "Questions">
             <h4>Questions</h4> 
+            </div>
           </div>
         </div>
         </div>
@@ -51,15 +49,26 @@
         <div class="col-sm-3">
           <h4>Answers</h4>
           <div class="well">
-            <div id = "computerNumber">
-          <h5> 0</h5> 
+            <div id = "multiplechoice">
+          <ul class="list-group">
+  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+  <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+  <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+  <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+</ul>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-info">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-info">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-info">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-info">Porta ac consectetur ac</a>
+</div> 
             </div> 
           </div>
         </div>
          <div class="col-sm-3">
         <h4>Right or Wrong</h4>
           <div class="well">
-          <div id = "yourNumber">
+          <div id = "score">
             <h5> 0</h5>
           </div>
         </div>
@@ -89,9 +98,9 @@
         </div>
         <div class="col-sm-2">
         <h4></h4>
-         <div class="well">
+         
           <div id = "start">
-              <h4>start</h4> 
+              <button>start</button>
             </div>
           </div>
         </div>

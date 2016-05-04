@@ -7,10 +7,13 @@
      margin: 0px 0px 0px 0px;
      padding: 50px;
 }  
+li{
 
+}
 
 h1 {
     font-size:60pt;
+
 }
 h4 {
     font-size:17pt;
@@ -44,35 +47,20 @@ body {
 
 /* Topmatter */
 
-#crystalspink img {
-    display: block;
-    height: 50px;  
-    width: 100px;
-    
-}
-#crystalsblue img {
-    display: block;
-    height: 50px;  
-    width: 100px;
-    }
-#crystalspurple img {
-    display: block;
-    height: 50px;  
-    width: 100px;
-    }
-#crystalsyellow img {
-    display: block;
-    height: 50px;  
-    width: 100px;
-    
-}
-
-
 
 button{
-    background:#f1f1f1;
-    height:auto;
+    background:#6495ed;
+    height:60px;
+    width:150px;
     text-align: center;
+    color: black;
+    font-size: 24px;
+    margin-top: 30px;
+
+}
+
+#list-group {
+    font-size: 12px;
 }
 /* For the left 'Guess A Letter!' and 'Guessed Letter' boxes. */
 .col-sm-2 {
@@ -85,8 +73,7 @@ button{
 .col-sm-3 {
      text-align:center;
      float:center;
-     font-family: 'Righteous', cursive;
-     
+     font-family: 'Righteous', cursive;  
  }
 
 .col-sm-9 {
@@ -103,8 +90,8 @@ button{
     font-family: 'Righteous', cursive;
      text-align:center;
      padding-top: 10px;
-
 }
+
 .well {
     background-color: black; 
     border-top-width: 5px;
@@ -113,6 +100,9 @@ button{
     border-right-width:0px;
     border-color: Goldenrod;
     color: #ff4500;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
+#list-group {
+    font-size: 12px;
+}

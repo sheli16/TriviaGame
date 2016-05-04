@@ -5,108 +5,38 @@ $(document).ready(function() {
    // computernumber();
    // crystalNumbers();
 
-
 //function computernumber = Math.floor((Math.random() * 100) + 19;
-    var randCrystal1 = 0;
-    var randCrystal2 = 0;
-    var randCrystal3 = 0;
-    var randCrystal4 = 0;
-    var totalCrystals = 0;
-    var clickCounter = 0;
-    var wins= 0;
-    var losses = 0;
-    var randomNumber = 0;
-
-
-  //function computernumber() {
-    //var min1 = 15;
-    //var max1= 10;
-    //randomNumber= Math.floor(Math.random()*(max1-min1+1)+min1);
-    //console.log(randomNumber);
-    //$('#computerNumber').html('<h5>'+ randomNumber +'</h5>');
-//}
-
-function crystalNumbers() {
-    var min = 1;
-    var max= 12;    
-     var min1 = 19;
-    var max1= 120;
-    randomNumber= Math.floor(Math.random()*(max1-min1+1)+min1);
-    console.log(randomNumber);
-    $('#computerNumber').html('<h5>'+ randomNumber +'</h5>');
-    randCrystal1= Math.floor(Math.random()*(max-min+1)+min);
-    randCrystal2= Math.floor(Math.random()*(max-min+1)+min);
-    randCrystal3= Math.floor(Math.random()*(max-min+1)+min);
-    randCrystal4= Math.floor(Math.random()*(max-min+1)+min);
-    console.log(randCrystal1);
-    console.log(randCrystal2);
-    console.log(randCrystal3);
-    console.log(randCrystal4);
-   
- }
- 
-function winslosses (){
-console.log(totalCrystals);
-console.log(randomNumber);
-if (totalCrystals === randomNumber){
-  wins++;
-  console.log(wins) 
-$('#W').html('Total wins '+'<h6>'+ wins +'</h6>');
- 
-}
-else
- 
- if
-  (totalCrystals + 1 > randomNumber){
-  losses++;
-    $('#L').html('Total losses  '+'<h6>'+ losses +'</h6>');
-   
+    var Trivia = [];
+    Trivia[0]= "In 1973 this singer had one of Discos earliest hits";
+    Trivia[1]= "In 1975 Harold Melivin and the Blue notes had this hit";
+    Trivia[2]="In 1975 'What am I going to do with you' became this singers big hits"; 
+    Trivia[3]="Night Fever sung by this group became an all time hit in 1977";
+    Trivia[4]="Donna Summer had many hits, but this one would leave you on the dance Floor";
+    //a1: "Don Downing",
+    //a2: "The Love I lost",
+    //a3: "Barry White", 
+    //a4: "Bee Gees",
+   // a5: "Last Dance" 
+    
+    
+    var Randanswers = {
+    a1: "Don Downing",
+    a2: "The Love I lost",
+    a3: "Barry White", 
+    a4: "Bee Gees",
+    a5: "Last Dance" 
     }
- }
+    
 
-
- console.log("ready2");
-
-$('#crystalspurple').on('click', function() {
-  if (clickCounter++ === 0) {crystalNumbers()};
-
-  totalCrystals = totalCrystals + randCrystal1;
-$('#yourNumber').html('<h5>'+ totalCrystals +'</h5>');
-   console.log('randomNumber');
-   console.log(randomNumber);
-   console.log(totalCrystals);
-   console.log(randCrystal1);
-   winslosses();
+$('#start').on('click', function() {
+  console.log("works");
+   triviaquestions();
  });
 
-$('#crystalspink').on('click', function() {
-  if (clickCounter++ === 0) {crystalNumbers()};
- totalCrystals = totalCrystals + randCrystal2;
-$('#yourNumber').html('<h5>'+ totalCrystals +'</h5>');
-   console.log(totalCrystals);
-   console.log(randCrystal1);
-   winslosses();
-});
+function triviaquestions() {
+     var randomquestions= Math.floor(Math.random(Trivia));
+    console.log(randomquestions);
+    $('#Questions').html('<h4>'+ randomquestions +'</h4>');
+} 
 
-$('#crystalsblue').on('click', function() {
-  if (clickCounter++ === 0) {crystalNumbers()};
- totalCrystals = totalCrystals + randCrystal3;
-$('#yourNumber').html('<h5>'+ totalCrystals +'</h5>');
-   console.log(totalCrystals);
-   console.log(randCrystal1);
-   winslosses();
-});
-
-   $('#crystalsyellow').on('click', function() {
-  if (clickCounter++ === 0) {crystalNumbers()};
- totalCrystals = totalCrystals + randCrystal4;
-$('#yourNumber').html('<h5>'+ totalCrystals +'</h5>');
-   console.log(totalCrystals);
-   console.log(randCrystal1);
-   winslosses();
-
-
-
-
-});
 });
