@@ -39,7 +39,8 @@ $(document).ready(function() {
     wronganswers[8] ="Luke Skywalker";
     wronganswers[9] ="Mr Roper";
 
-
+var correctanswer = 0
+var badanswer =0
 
  var rightanswers = [];
     rightanswers[0] ="Don Downing";
@@ -64,49 +65,88 @@ function triviaquestions() {
     $('#Questions').html('<h4>'+ randomquestions +'</h4>');
   
 if (number = 0 ){
-  $("#1q").html('<li><p>'+ arightnswers[0]  +'</p></li>');
+correctanswer = rightanswers[0]
+  $("#1q").html('<li><p>'+ correctanswer  +'</p></li>');
   $("#2q").html('<li><p>'+ wronganswers[2]  +'</p></li>');
   $("#3q").html('<li><p>'+ wronganswers[3]  +'</p></li>');
   $("#4q").html('<li><p>'+ wronganswers[4]  +'</p></li>');
-}
+$("#1q").on('click', function(gotitright) 
+  });
+  
   if (number = 1){
+    correctanswer = rightanswers[0]
   $("#1q").html('<li><p>'+ wronganswers[5]  +'</p></li>');
   $("#2q").html('<li><p>'+ wronganswers[6]  +'</p></li>');
   $("#3q").html('<li><p>'+ rightanswers[1]  +'</p></li>');
   $("#4q").html('<li><p>'+ wronganswers[7]  +'</p></li>');
- }
+  $('#3q').on('click', function(gotitright); 
+  console.log("got it right");
+ });
+ 
  if (number = 2){
+  correctanswer = rightanswers[2]
   $("#1q").html('<li><p>'+ wronganswers[5]  +'</p></li>');
   $("#2q").html('<li><p>'+ wronganswers[6]  +'</p></li>');
   $("#3q").html('<li><p>'+ rightanswers[2]  +'</p></li>');
   $("#4q").html('<li><p>'+ wronganswers[7]  +'</p></li>');
-}
+  $('#3q').on('click', function(gotitright); 
+  console.log("got it right");
+});
   if (number = 3){
+    correctanswer = rightanswers[4]
   $("#1q").html('<li><p>'+ wronganswers[5]  +'</p></li>');
   $("#2q").html('<li><p>'+ wronganswers[6]  +'</p></li>');
   $("#3q").html('<li><p>'+ rightanswers[3]  +'</p></li>');
   $("#4q").html('<li><p>'+ wronganswers[7]  +'</p></li>');
-}
+  $('#3q').on('click', function(gotitright); 
+  console.log("got it right");
+});
 if (number = 4){
+  correctanswer = rightanswers[4]
   $("#1q").html('<li><p>'+ wronganswers[5]  +'</p></li>');
   $("#2q").html('<li><p>'+ rightanswers[4]  +'</p></li>');
   $("#3q").html('<li><p>'+ wronganswers[6] +'</p></li>');
   $("#4q").html('<li><p>'+ wronganswers[7]  +'</p></li>');
-
-  }
-  if (number = 5){
+  $('#2q').on('click', function(gotitright); 
+  console.log("got it right");
+});
+if (number = 5){
+    correctanswer = rightanswers[5]
   $("#1q").html('<li><p>'+ wronganswers[5]  +'</p></li>');
   $("#2q").html('<li><p>'+ wronganswers[6]  +'</p></li>');
   $("#3q").html('<li><p>'+ wronganswers[7] +'</p></li>');
   $("#4q").html('<li><p>'+ rightanswers[5]  +'</p></li>');
-} 
- };
+  $('#4q').on('click', function(gotitright); 
+  console.log("got it right");
+});
+else
+{
+    $('#q').on('click', function(gotitwrong) {
+{
+  if (clickCounter++ === 0) {crystalNumbers()};
+}
+}
 
+
+function gotitright(){
+  $("score").html('<h5>'+ correctanswer +'</5>');
+}
+
+
+function gotitWrong(){
+$("score").html('<h5>'+ badanswer +'</5>');
+}
+
+
+
+
+timer()
+}
 function timer(){
 var timeLeft = 30;
-var elem = document.getElementById('timer');
-var timerId = setInterval(countdown, 30000);
-
+var elem = document.getElementById('clock');
+var timerId = setInterval(countdown, 300000);
+$('#clock').html('<h1>'+ timerId +'</h1>');
 function countdown() {
   if (timeLeft == 0) {
     clearTimeout(timerId);
@@ -116,9 +156,23 @@ function countdown() {
     timeLeft--;
   };
 
+ };
 
+//var seconds = Math.floor( (t/1000) % 60 );
+
+count: function(){
+    stopwatch.time++;
+    var converted = stopwatch.timeConverter(stopwatch.time);
+    $('#display').html(converted);
+  },
+  timeConverter: function(t){
+    var minutes = Math.floor(t/60);
+    var seconds = t - (minutes * 60);
+    if (seconds < 10){
+      seconds = "0" + seconds; 
 };
 
+};
 };
 
 });
