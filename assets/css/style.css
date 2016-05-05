@@ -3,7 +3,7 @@
      text-align: center;
  }
 
-     #timer {
+     #clock {
      margin: 0px 0px 0px 0px;
      padding: 50px;
 }  
@@ -39,11 +39,16 @@ body {
     background-position: center;
     background-color: black;
  }
-#start {
+
+.1q {
+    padding: 1px;
         
  }  
 
+ul li:hover { 
+background-color: yellow
 
+ }
 
 /* Topmatter */
 
@@ -106,3 +111,6 @@ button{
 #list-group {
     font-size: 12px;
 }
+
+ul li:hover { 
+background-color: yellow
