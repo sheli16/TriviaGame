@@ -3,22 +3,24 @@
      text-align: center;
  }
 
-     #clock {
-     margin: 0px 0px 0px 0px;
-     padding: 50px;
+#clock {
+margin: 0px 0px 0px 0px;
+padding: 50px;
+font-size: 60px;
 }  
-li{
 
+p {font-size:14pt;
 }
 
 h1 {
     font-size:60pt;
-
 }
+
 h4 {
     font-size:17pt;
     color: GoldenRod;
 }
+
 h5 {
     font-size:30pt;
     text-align: center;
@@ -103,6 +105,12 @@ button{
      padding-top: 10px;
 }
 
+.score {
+    
+     padding: 5px;
+}
+
+
 .well {
     background-color: black; 
     border-top-width: 5px;
@@ -111,7 +119,7 @@ button{
     border-right-width:0px;
     border-color: Goldenrod;
     color: #ff4500;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 #list-group {

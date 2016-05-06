@@ -65,14 +65,13 @@ function triviaquestions() {
     $('#Questions').html('<h4>'+ randomquestions +'</h4>');
 
   function gotitright(){
-  //$("score").html('<h5>'+ "correctanswer" +'</h5>');
-
-//$("#score").html('<h5>'+ "test 1" +'</h5>');
-$("#score").html('<h6>' +'yeah!'+ correctanswer +'</h6>');
+$("#score").html('<h6>' +'yeah! '+ correctanswer +'</h6>');
 }
 function gotitWrong(){
-$("#score").html('<h6>'+ badanswer + correctanswer +'</h6>');
+$("#score").html('<h6>'+ badanswer+ '  '+ correctanswer +'</h6>');
 }
+
+
 
   console.log(number);
   //number = 0;
@@ -129,6 +128,7 @@ $("#1q, #2q, #4q").on('click', function(){
   
   $("#3q").on('click', function(){
   gotitright();
+
 });
 $("#1q, #2q, #4q").on('click', function(){
   gotitWrong();
@@ -163,8 +163,22 @@ $("#2q, #3q, #1q").on('click', function(){
 });
   };
 
+//var myVar = setInterval(myTimer, 1000);
 
-
+//function myTimer() {
+   // var d = new Date();
+    //document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+//}
+var counter = 0;
+var interval = setInterval(function() {
+    counter++;
+    document.getElementById("clock").innerHTML= counter;
+    // Display 'counter' wherever you want to display it.
+    if (counter == 10) {
+        // Display a login box
+        clearInterval(interval);
+    }
+}, 1000);
 
 };
 
